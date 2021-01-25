@@ -1,0 +1,36 @@
+
+$colorBlack1 : #000;
+$colorBlack2: #1e1e1e;
+$colorGray1 : rgb(129, 133, 139);
+$colorGray2 : #2c2c2c;
+$colorGray3 : #999;
+$colorWhite1 : #f9f9f9;
+$colorWhite2 : #ffffff;
+//$colorOliveGreen1 : #afc572;
+//$colorOliveGreen1 : #66cc33;
+//$colorOliveGreen1 : #7b8736;
+$colorOliveGreen1 : #bbc948;
+$colorOrange1 : #fa8945;
+$colorRed1 : #ef394e;
+
+$width1 : 200px;
+
+$input-padding-x : .75rem;
+$input-padding-y : .65rem;
+
+$break-max-width-sm: 576px;
+$break-max-width-md: 768px;
+$break-max-width-lg: 992px;
+$break-max-width-xl: 1200px;
+
+
+@mixin prefix($property , $value) {
+  -webkit-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  -moz-#{$property}: $value;
+  #{$property}: $value;
+}
+
+
+

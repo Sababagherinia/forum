@@ -1,0 +1,232 @@
+.row {
+    /*flex-direction: row-reverse;*/
+}
+
+body {
+    text-align: right;
+    direction: rtl;
+    /*font-family: 'IRANSans';*/
+}
+
+.sidebar-collapse .show-on-collapsed {
+    float: right;
+}
+
+.page-sidebar .nav-text {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.dropdown-toggle::after {
+    margin-left: 0;
+    margin-right: .255em;
+}
+
+.card-controls {
+    float: left;
+}
+
+.list-unstyled {
+    padding-right: 0;
+}
+
+.btn {
+    border-radius: .25rem;
+}
+
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@media (min-width: 992px) {
+    .page-content {
+        right: 20%;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .page-content {
+        right: 15%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .collapsed .page-content {
+        right: 40px;
+    }
+
+    .page-sidebar .nav-pills > li > ul > li {
+        margin-right: 38px;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-sidebar {
+        right: 0;
+    }
+
+    .page-sidebar.toggled {
+        margin-right: -250px;
+    }
+}
+
+.nav {
+    padding-right: 0;
+}
+
+.close {
+    float: left;
+}
+
+.modal-header .close {
+    padding: 1rem;
+    margin: auto -1rem -1rem -1rem;
+}
+
+/*@media (min-width: 992px){
+	.page-sidebar, .page-content{
+		position: static;
+		float: right;
+	}
+}*/
+
+/*body *{
+	text-align: right;
+	direction: rtl;
+}
+.nav{
+	padding-right: 0;
+}*/
+
+.select2-container {
+    width: 100% !important;
+}
+
+.exerciseDetails {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .05);
+    position: relative;
+}
+
+.exerciseDetailsAdd {
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #6a7de8;
+    color: #fff !important;
+    font-size: 18px;
+    margin: 32px auto 0px;
+    border-radius: 50%;
+    padding-top: 4px;
+    text-decoration: none !important;
+}
+
+.card-header-remove {
+    color: #fff !important;
+    background-color: #c13232;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.exerciseDetailsRemove {
+    z-index: 1000;
+    color: #fff !important;
+    background-color: #c13232;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 11px;
+}
+
+.card-header p a {
+    display: inline-block;
+    min-height: 10px;
+    min-width: 50px;
+}
+
+.widget-resellers {
+    min-height: auto;
+}
+
+#details .detail {
+    position: relative;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+#details .detail .detail-details {
+    display: none;
+}
+
+#details .detail-details {
+    position: relative;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+#details .detail-remove, #details .detail-details .detail-value-remove {
+    color: #fff;
+    background-color: red;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#details .details-value-add {
+    color: #fff;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+    text-decoration: none !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dropdown-menu > li > a .fa, .dropdown-menu > li > a .ion {
+    float: left;
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.navbar-toggleable .navbar-nav .dropdown-menu {
+    text-align: right;
+    direction: rtl;
+}
+

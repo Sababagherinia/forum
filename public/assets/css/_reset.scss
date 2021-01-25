@@ -1,0 +1,327 @@
+:root{
+  --input-padding-x : .75rem;
+  --input-padding-y : .65rem;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #bbc948;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bbc948;
+  border-radius: 10px;
+  //@include prefix(transition ,all .5s);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fa8945;
+}
+
+html,body{
+  font-family: iranyekan;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body{
+  padding-right: 0 !important;
+}
+.container , .container-fluid , .modal{
+  direction: rtl;
+  text-align: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.text-decoration-none a , .text-decoration-none a:hover , .text-decoration-none , .text-decoration-none:hover{
+  text-decoration: none !important;
+}
+
+::-moz-selection {
+  background-color: $colorOliveGreen1;
+  color: #fff;
+}
+::selection {
+  background-color: $colorOliveGreen1;
+  color: #fff;
+
+}
+
+
+.form-control:focus{
+  box-shadow: none;
+  border-color: $colorOliveGreen1;
+
+}
+
+.text-decoration-none{
+  text-decoration: none !important;
+}
+
+
+a,button , input , select{
+  outline: none !important;
+}
+
+.pagination{
+  padding-right: 0;
+  .page-item{
+    &.active{
+      .page-link{
+        background-color: $colorOliveGreen1;
+        border-color: $colorOliveGreen1;
+        color: #fff;
+      }
+    }
+    .page-link{
+      color: $colorOliveGreen1;
+      border-radius: 0;
+      @include prefix(transition , all .5s);
+      &:hover{
+        background-color: $colorOliveGreen1;
+        border-color: $colorOliveGreen1;
+        color: #fff;
+
+      }
+    }
+    +.page-item{
+      margin-right: 3px;
+    }
+  }
+
+}
+
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.sticky-top{
+  z-index: 899;
+}
+
+.swal-overlay--show-modal .swal-modal{
+  .swal-content{
+    margin-top: 30px;
+    color: $colorGray2;
+    direction: rtl;
+  }
+  .swal-button{
+    background-color: $colorOliveGreen1;
+  }
+}
+
+//======================custom checkbox
+
+.custom-control-label::before{
+  right: 0;
+  left: auto;
+  top: 1px;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before{
+  border-color: $colorOliveGreen1;
+  background-color: $colorOliveGreen1;
+}
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before{
+  border-color: $colorOliveGreen1;
+}
+.custom-control-input:focus ~ .custom-control-label::before{
+  box-shadow: 0 0 0 0.2rem rgba($colorOliveGreen1, 0.25);
+}
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before{
+  background-color: rgba($colorOliveGreen1, 0.25);
+  border-color: rgba($colorOliveGreen1, 0.25);
+}
+.custom-control-label::after{
+  display: none;
+}
+.custom-control-label{
+  padding-right: 30px;
+  right:  10px;
+
+}
+
+
+//==========floating label
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > textarea,
+.form-label-group > select,
+.form-label-group > label {
+  padding: $input-padding-y $input-padding-x;
+  height: 45px;
+}
+.form-label-group > textarea{
+  height: 100px;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+
+
+
+
+.form-label-group textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::placeholder {
+  color: transparent;
+}
+
+
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+
+
+.form-label-group textarea:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group select {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+
+.form-label-group textarea:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 10px;
+  color: #777;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 10px;
+  color: #777;
+}
+
+.form-label-group select ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 10px;
+  color: #777;
+}
+
+
+
+//========modals
+
+
+.modal{
+  padding-right: 0 !important;
+}
+
+
+@media(max-width: $break-max-width-lg){
+  .modal.fade .modal-dialog{
+    transform: translate(0, 100%);
+  }
+  .modal.show .modal-dialog{
+    transform: none;
+  }
+  .modal-open .modal{
+    overflow-y: hidden;
+  }
+}
+
+
+.bottom-sheet{
+  @media (max-width: $break-max-width-lg){
+    height: 100% !important;
+    overflow: hidden !important;
+    .modal-dialog{
+      margin-top: 0;
+    }
+    &.modal.fade{
+      .modal-dialog{
+        transform: translate(0, 100%);
+      }
+    }
+    &.modal.show{
+      .modal-dialog {
+        transform: none;
+      }
+    }
+    .modal-dialog{
+      height: 100%;
+      align-items: flex-end;
+
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+      .modal-content{
+        border-radius: 30px 30px 0 0;
+        padding: 20px 15px;
+      }
+    }
+  }
+
+}
